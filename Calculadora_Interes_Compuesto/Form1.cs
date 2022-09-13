@@ -23,29 +23,33 @@ namespace Calculadora_Interes_Compuesto
 
         private void comboTiempo_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            
+           
+        }
+
+        private void btnCalcular_Click_1(object sender, EventArgs e)
+        {
             string optionSelected = comboTiempo.Text;
-
-            capital = double.Parse(txtCapital.Text);
-            tasa_interes = double.Parse(txtInteres.Text);
-            time = double.Parse(txtTime.Text);
-
+            capital = double.Parse(txtNum1.Text);
+            tasa_interes = double.Parse(txtNum2.Text);
+            time = double.Parse(txtNum3.Text);
             double I = 0;
-
+           
             switch (optionSelected)
             {
                 case "ANUAL":
                     I = capital * tasa_interes * time;
                     break;
                 case "MENSUAL":
-                    I = capital * tasa_interes * (time / 12);
+                    I = capital * tasa_interes * time / 12;
                     break;
                 case "DIARIO":
-                    I = capital * tasa_interes * (time / 360);
+                    I = capital * tasa_interes * time / 360;
                     break;
             }
             MessageBox.Show(I.ToString());

@@ -29,9 +29,9 @@ namespace Calculadora_Interes_Compuesto
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtCapital = new System.Windows.Forms.TextBox();
-            this.txtTime = new System.Windows.Forms.TextBox();
-            this.txtInteres = new System.Windows.Forms.TextBox();
+            this.txtNum1 = new System.Windows.Forms.TextBox();
+            this.txtNum3 = new System.Windows.Forms.TextBox();
+            this.txtNum2 = new System.Windows.Forms.TextBox();
             this.comboTiempo = new System.Windows.Forms.ComboBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,26 +40,26 @@ namespace Calculadora_Interes_Compuesto
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txtCapital
+            // txtNum1
             // 
-            this.txtCapital.Location = new System.Drawing.Point(74, 81);
-            this.txtCapital.Name = "txtCapital";
-            this.txtCapital.Size = new System.Drawing.Size(100, 20);
-            this.txtCapital.TabIndex = 0;
+            this.txtNum1.Location = new System.Drawing.Point(74, 81);
+            this.txtNum1.Name = "txtNum1";
+            this.txtNum1.Size = new System.Drawing.Size(100, 20);
+            this.txtNum1.TabIndex = 0;
             // 
-            // txtTime
+            // txtNum3
             // 
-            this.txtTime.Location = new System.Drawing.Point(74, 158);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(100, 20);
-            this.txtTime.TabIndex = 1;
+            this.txtNum3.Location = new System.Drawing.Point(74, 158);
+            this.txtNum3.Name = "txtNum3";
+            this.txtNum3.Size = new System.Drawing.Size(100, 20);
+            this.txtNum3.TabIndex = 1;
             // 
-            // txtInteres
+            // txtNum2
             // 
-            this.txtInteres.Location = new System.Drawing.Point(215, 81);
-            this.txtInteres.Name = "txtInteres";
-            this.txtInteres.Size = new System.Drawing.Size(100, 20);
-            this.txtInteres.TabIndex = 2;
+            this.txtNum2.Location = new System.Drawing.Point(215, 81);
+            this.txtNum2.Name = "txtNum2";
+            this.txtNum2.Size = new System.Drawing.Size(100, 20);
+            this.txtNum2.TabIndex = 2;
             // 
             // comboTiempo
             // 
@@ -82,6 +82,7 @@ namespace Calculadora_Interes_Compuesto
             this.btnCalcular.TabIndex = 4;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click_1);
             // 
             // label1
             // 
@@ -131,9 +132,9 @@ namespace Calculadora_Interes_Compuesto
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.comboTiempo);
-            this.Controls.Add(this.txtInteres);
-            this.Controls.Add(this.txtTime);
-            this.Controls.Add(this.txtCapital);
+            this.Controls.Add(this.txtNum2);
+            this.Controls.Add(this.txtNum3);
+            this.Controls.Add(this.txtNum1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -143,9 +144,9 @@ namespace Calculadora_Interes_Compuesto
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtCapital;
-        private System.Windows.Forms.TextBox txtTime;
-        private System.Windows.Forms.TextBox txtInteres;
+        private System.Windows.Forms.TextBox txtNum1;
+        private System.Windows.Forms.TextBox txtNum3;
+        private System.Windows.Forms.TextBox txtNum2;
         private System.Windows.Forms.ComboBox comboTiempo;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label label1;
